@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style type="text/css" media="screen"><!--
-@import url("../css/app.css");
---></style>
-<style type="text/js" media="screen"><!--
-@import url("../js/bootstrap.js");
---></style>
-</head>
+<html>
+@extends('layout.head')
+</html>
 <body>
 <div class="container">
 
