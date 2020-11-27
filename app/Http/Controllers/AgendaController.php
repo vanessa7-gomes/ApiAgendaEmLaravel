@@ -33,7 +33,7 @@ class AgendaController extends Controller
 
     public function update(Request $request, $id)
     {
-        $carro = Agenda::findOrFail($id);
+        $agenda = Agenda::findOrFail($id);
        return $agenda->update($request->all());
     }
 
