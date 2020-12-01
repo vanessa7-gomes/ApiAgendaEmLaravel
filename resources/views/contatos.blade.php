@@ -1,13 +1,14 @@
 <html>
+@extends('layouts.app')
 @extends('layout.head')
 </html>
 <body>
 <div class="container">
 
-<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+
+<form class="well form-horizontal" action="" method="post"  id="contact_form">
 <fieldset>
 
-<!-- Form Name -->
 <legend>Inserir um novo contato</legend>
 
 <!-- Text input-->
@@ -117,6 +118,6 @@
 </fieldset>
 </form>
 </div>
-</div><!-- /.container -->
+</div>
 </body>
 </html>
