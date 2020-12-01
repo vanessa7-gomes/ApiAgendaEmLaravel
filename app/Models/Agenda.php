@@ -10,10 +10,12 @@ class Agenda extends Model
     protected $table = 'agenda';
     protected $fillable = [
         'nome',
-        'telefone',
+        'sobrenome',
         'email',
-        'rua',
+        'telefone',
+        'celular',
         'bairro',
         'cidade',
+        'estado',
     ];
 }

@@ -16,11 +16,13 @@ class CreateAgendaTable extends Migration
         Schema::create('agenda', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('telefone');
+            $table->string('sobrenome');
             $table->string('email');
-            $table->string('rua');
+            $table->string('telefone');
+            $table->string('celular');
             $table->string('bairro');
             $table->string('cidade');
+            $table->string('estado');
             $table->timestamps();
         });
     }
