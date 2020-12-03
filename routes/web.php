@@ -16,12 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::post('/', function () {
-    return view('contatos');
-});
+
 
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::post('/home', [App\Http\Controllers\HomeController::class, 'contatos'])->name('home');
+Route::get('/index', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/agenda', [App\Http\Controllers\HomeController::class, 'teste']);
+Route::get('/cadastrarPessoa', [App\Http\Controllers\HomeController::class, 'cadastrarPessoa'])->name('cadastrarPessoa');
+
+

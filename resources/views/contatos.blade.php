@@ -6,34 +6,34 @@
 <div class="container">
 
 
-<form class="well form-horizontal" action="" method="post"  id="contact_form">
+<form class="well form-horizontal" action="{{route('home.cadastrarPessoa')}}" method="get"  id="contact_form">
 <fieldset>
 
 <legend>Inserir um novo contato</legend>
 
 <!-- Text input-->
-
-<div class="form-group">
-<label class="col-md-4 control-label">Primeiro Nome:</label>  
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input  name="nome" class="form-control"  type="text">
-</div>
-</div>
-</div>
+<main role="main" class="container">
+    <div class="form-group">
+        <label class="col-md-4 control-label">Primeiro Nome:</label>  
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input  name="nome" class="form-control"  type="text">
+                </div>
+            </div>
+    </div>
 
 <!-- Text input-->
 
-<div class="form-group">
-<label class="col-md-4 control-label" >Sobrenome:</label> 
-<div class="col-md-4 inputGroupContainer">
-<div class="input-group">
-<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-<input name="sobrenome" class="form-control"  type="text">
-</div>
-</div>
-</div>
+    <div class="form-group">
+        <label class="col-md-4 control-label" >Sobrenome:</label> 
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="sobrenome" class="form-control"  type="text">
+                </div>
+            </div>
+    </div>
 
 <!-- Text input-->
    <div class="form-group">
@@ -108,13 +108,13 @@
 </div>
 
 <!-- Button -->
-<div class="form-group">
-<label class="col-md-4 control-label"></label>
-<div class="col-md-4">
-<button type="submit" class="btn btn-warning" >Salvar <span class="glyphicon glyphicon-send"></span></button>
+    <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-warning" >Salvar <span class="glyphicon glyphicon-send"></span></button>
+</form>
 </div>
 </div>
-
 </fieldset>
 </form>
 </div>

@@ -25,4 +25,17 @@ class HomeController extends Controller
     {
         return view('index');
     }
+    public function teste()
+    {
+        return view('contatos');
+    }
+
+    public function cadastrarPessoa()
+    {
+        // chamar a controller Agenda e a funcao store
+        // tipo a rota dela
+        //return view('index');
+        echo 'cadastrar Pessoa';
+    }
+   
 }
