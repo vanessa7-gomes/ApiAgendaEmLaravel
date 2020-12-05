@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class HomeController extends Controller
 {
     /**
@@ -27,7 +28,8 @@ class HomeController extends Controller
     }
     public function teste()
     {
-        return view('contatos');
+        //return view('contatos');
+        echo 'teste';
     }
 
     public function cadastrarPessoa()
@@ -37,5 +39,4 @@ class HomeController extends Controller
         //return view('index');
         echo 'cadastrar Pessoa';
     }
-   
 }

@@ -20,4 +20,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/' , [AgendaController::class, 'index']);
-Route::resource('agenda', AgendaController::class);
+Route::resource('/listaApi', AgendaController::class);
+
+Route::get('/home', [AgendaController::class, 'PaginaHome'])->name('paginaHome');
+
+
+Route::get('/agenda' , [AgendaController::class, 'agendaCadastrar'])->name('formularioCadastro');
+
+Route::post('/cadastrar' , [AgendaController::class, 'store'])->name('cadastrarAgenda');
+
+Route::get('/listaContato' , [AgendaController::class, 'PaginaLista'])->name('listaContato');
+

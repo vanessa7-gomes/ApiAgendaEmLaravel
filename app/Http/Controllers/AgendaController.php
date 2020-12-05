@@ -41,5 +41,22 @@ class AgendaController extends Controller
     {
         $agenda = Agenda::findOrFail($id);
        return $agenda->delete();
+     }
+
+    // carrega as rota referente as view html
+      // criado essa funcao    
+      public function agendaCadastrar(){
+        echo 'formulario cadastrar';
+        //return view('contatos');
     }
+
+    public function PaginaHome(){
+        echo 'chamar a pagina home';
+        //return view('index');
+    }
+
+    public function PaginaLista(){
+        echo 'chamar a pagina listar';
+        //return view('listar');
+    } 
 }
