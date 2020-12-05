@@ -18,8 +18,10 @@ class AgendaController extends Controller
 
     public function store(Request $request)
     {   
-        print_r($request->all());
-        return Agenda::create($request->all());
+        // print_r($request->all());
+        // return Agenda::create($request->all());
+        Agenda::create($request->all());
+        return redirect()->route('listaContato');
     }
 
     public function show($id)
@@ -46,17 +48,17 @@ class AgendaController extends Controller
     // carrega as rota referente as view html
       // criado essa funcao    
       public function agendaCadastrar(){
-        echo 'formulario cadastrar';
-        //return view('contatos');
+        //echo 'formulario cadastrar';
+        return view('contatos');
     }
 
     public function PaginaHome(){
-        echo 'chamar a pagina home';
-        //return view('index');
+        //echo 'chamar a pagina home';
+        return view('index');
     }
 
     public function PaginaLista(){
-        echo 'chamar a pagina listar';
-        //return view('listar');
+        //echo 'chamar a pagina listar';
+        return view('listar');
     } 
 }
