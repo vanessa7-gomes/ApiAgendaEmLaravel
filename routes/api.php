@@ -31,3 +31,9 @@ Route::post('/cadastrar' , [AgendaController::class, 'store'])->name('cadastrarA
 
 Route::get('/listaContato' , [AgendaController::class, 'PaginaLista'])->name('listaContato');
 
+Route::get('/listaContato/{id}' , [AgendaController::class, 'destroy'])->name('deletarContato');
+
+Route::put('/atualizar/{id}' , [AgendaController::class, 'update']);
+
+
+// metodo get localhost:8000/api/?

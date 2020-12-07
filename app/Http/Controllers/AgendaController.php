@@ -32,17 +32,17 @@ class AgendaController extends Controller
     public function edit($id)
     {
     }
-
     public function update(Request $request, $id)
     {
         $agenda = Agenda::findOrFail($id);
        return $agenda->update($request->all());
     }
-
+    
     public function destroy($id)
     {
         $agenda = Agenda::findOrFail($id);
-       return $agenda->delete();
+        $agenda->delete();
+        return redirect()->route('listaContato');
      }
 
     // carrega as rota referente as view html
@@ -59,6 +59,7 @@ class AgendaController extends Controller
 
     public function PaginaLista(){
         //echo 'chamar a pagina listar';
-        return view('listar');
+        $listaTodosUsuario = Agenda::all();//essa funcao é mesma index traz tudo contato
+        return view('listar', compact('listaTodosUsuario'));
     } 
 }
