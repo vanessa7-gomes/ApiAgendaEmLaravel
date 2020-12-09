@@ -45,7 +45,7 @@ class AgendaController extends Controller
         return redirect()->route('listaContato');
      }
 
-    // carrega as rota referente as view html
+    // carrega as rotas referente as view html
       // criado essa funcao    
       public function agendaCadastrar(){
         //echo 'formulario cadastrar';

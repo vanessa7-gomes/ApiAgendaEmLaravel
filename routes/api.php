@@ -24,8 +24,7 @@ Route::resource('/listaApi', AgendaController::class);
 
 Route::get('/home', [AgendaController::class, 'PaginaHome'])->name('paginaHome');
 
-
-Route::get('/agenda' , [AgendaController::class, 'agendaCadastrar'])->name('formularioCadastro');
+Route::get('/formulario' , [AgendaController::class, 'agendaCadastrar'])->name('formularioCadastro');
 
 Route::post('/cadastrar' , [AgendaController::class, 'store'])->name('cadastrarAgenda');
 
