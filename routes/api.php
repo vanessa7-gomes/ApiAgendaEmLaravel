@@ -32,7 +32,6 @@ Route::get('/listaContato' , [AgendaController::class, 'PaginaLista'])->name('li
 
 Route::get('/listaContato/{id}' , [AgendaController::class, 'destroy'])->name('deletarContato');
 
-Route::put('/atualizar/{id}' , [AgendaController::class, 'update']);
+Route::put('/atualizar/{id} ' , [AgendaController::class, 'update']);
 
 
-// metodo get localhost:8000/api/?
